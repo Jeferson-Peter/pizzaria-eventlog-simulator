@@ -1,7 +1,6 @@
 from datetime import datetime
 from typing import Final, List, Dict, Literal
 
-# Tipos literais para restringir valores possíveis
 EventName = Literal[
     "ev_order_created", "ev_payment_confirmed", "ev_preparation_started",
     "ev_pizza_baked", "ev_oven_started", "ev_out_for_delivery",
@@ -15,7 +14,6 @@ PaymentMethod = Literal["credit", "debit", "cash"]
 VariantType = Literal["online", "in_store"]
 DeliveryMode = Literal["store", "home"]
 
-# Constantes com tipagem
 NUM_CASES: Final[int] = 10_000
 START_DATE: Final[datetime] = datetime(2025, 7, 15, 18, 0)
 
